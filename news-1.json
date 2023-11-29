@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name" : "Gundam recingggg",
+        "price": 1500000,
+        "catalog":"Gundam recing team"
+    },
+    {
+        "id": 2,
+        "name" : "Gundam Balap",
+        "price": 1900000,
+        "catalog":"Gundam recing club"
+    },
+    {
+        "id": 3,
+        "name" : "Gundam Drag",
+        "price": 1900000,
+        "catalog":"Gundam Drag club"
+    }
+]
