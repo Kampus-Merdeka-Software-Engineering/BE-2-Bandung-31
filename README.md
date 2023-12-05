@@ -92,7 +92,7 @@ model Berita {
   id           Int @id @default(autoincrement())
   judul        String
   headline     String
-  isi          String
+  isi          String @db.Text
   penulis      String
   imageUrl     String? // kalau mau dibikin gpp kalau dtanya ksong
   categoryId   Int?
