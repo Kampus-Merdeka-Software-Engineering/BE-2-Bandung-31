@@ -7,9 +7,9 @@ const { contactRoutes } = require("./routes/contact.routes");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
-app.use(cors())
 
 
 app.get("/", async(req, res) => {
@@ -17,15 +17,15 @@ app.get("/", async(req, res) => {
 });
 
 // berita Routes
-app.get("/beritas",beritaRoutes);
+app.use("/beritas", beritaRoutes);
 // end  berita routes
 
 // category Routes
-app.use("/categorys",categoryRoutes);
+app.use("/categorys", categoryRoutes);
 // end  category routes
 
 // contact Routes
-app.use("/contacts",contactRoutes);
+app.use("/contacts", contactRoutes);
 // end  contact routes
 
 app.all("*", async(req, res) => {
