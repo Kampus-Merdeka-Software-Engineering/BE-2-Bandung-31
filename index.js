@@ -16,7 +16,7 @@ app.get("/", async(req, res) => {
 });
 
 // berita Routes
-app.use("/beritas",beritaRoutes);
+app.get("/beritas",beritaRoutes);
 // end  berita routes
 
 // category Routes
