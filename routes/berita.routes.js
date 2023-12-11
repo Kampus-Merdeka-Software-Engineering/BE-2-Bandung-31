@@ -43,7 +43,7 @@ beritaRoutes.get("/:id", async (req, res) => {
 
 
 //get berita by id category
-beritaRoutes.get("/:categoryId", async (req, res) => {
+beritaRoutes.get("/category/:categoryId", async (req, res) => {
     const { categoryId } = req.params;
     const berita = await prisma.berita.findMany({
         where: {
